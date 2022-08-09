@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --blue:#7030cc;
+    --white:#ffffff;
+    --primary_color:#1bbcef;
+}
+body{
+    font-family: "oswald" , sans-serif;
+    font-weight: 400;
+}
+.top_header{
+    background-image: linear-gradient(to right , var(--blue) ,var(--blue));
+    height: 80vh;
+    
+}
+.logo_box{
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.menu{
+    display: inline-block;
+    width: 50vw;
+    margin-left: 200px;
+    transform: translateY(-20px);
+}
+.menu_list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.list_item{
+    font-size: 22px;
+    color: var(--white);
+}
+.list_item:hover{
+    color: var(--primary_color);
+    border-bottom: 1px solid var(--primary_color);
+}
+.list_btn{
+    background-color: var(--primary_color);
+    padding: 5px 15px;
+}
+.list_btn:hover{
+    color: var(--white);
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main_heading{
+    font-size: 50px;
+    color: var(--white);
+    letter-spacing: 5px;
+}
+.sub_para{
+    color: var(--white);
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+.right_container_img{
+    background-image: url(./images/30495\ [Converted]-01\(1\).svg);
+    height: 65vh;
+    width: 40vw;
+    background-repeat: no-repeat;
+}
+
+
+.main_part{
+    margin-top: 50px;
+    display: flex;
+    justify-content:space-around;
+}
+.left_side_image{
+    background-image: url(./images/Saas\ illustration-img2.svg);
+    height:60vh;
+    width:30vw;
+    background-size: cover;
+}
+.heading_right_side{
+    font-size: 36px;
+}
+.main_text_{
+    font-size: 24px;
+    margin-top: 30px;
+}
+.sub_text{
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+.heading3{
+    margin-top: 90px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.card{
+    height: 100%;
+    width: 230px;
+    box-shadow: 1px 1px 3px 4px;
+    display: inline-block;
+    margin-right: 50px;
+}
+.card_logo {
+    background-color: #faeaeb;
+    padding: 25px;
+    border-radius: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+.about_card{
+    padding:30px;
+    text-align: center;
+    font-size: 30px;
+    background-color: var(--blue);
+    border-radius: 50px;
+    
+}
+.about_card_sub{
+    font-size: 16px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
