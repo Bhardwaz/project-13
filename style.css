@@ -14,24 +14,25 @@ body{
 }
 .top_header{
     background-image: linear-gradient(to right , var(--blue) ,var(--blue));
-    height: 80vh;
-    
+    /* height: 80vh; */
+}
+.navbar_container{
+    display: flex;
+    align-items: center;
 }
 .logo_box{
-    display: inline-block;
-    margin-top: 40px;
-    margin-left: 40px;
+   flex: 1 3 100%;
+   margin-top: 20px;
+   margin-left: 20px;
 }
 .menu{
-    display: inline-block;
-    width: 50vw;
-    margin-left: 200px;
-    transform: translateY(-20px);
+   flex: 2 1 100%; 
 }
 .menu_list{
     list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 50px;
 }
 .list_item{
     font-size: 22px;
@@ -53,6 +54,10 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+.left_container{
+    flex: 1 1 100%;
+    margin-left: 10px;
+}
 .main_heading{
     font-size: 50px;
     color: var(--white);
@@ -64,6 +69,7 @@ body{
     margin-top: 10px;
 }
 .right_container_img{
+    flex: 1 1 100%;
     background-image: url(./images/30495\ [Converted]-01\(1\).svg);
     height: 65vh;
     width: 40vw;
@@ -74,13 +80,22 @@ body{
 .main_part{
     margin-top: 50px;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
+    align-items: center;
 }
 .left_side_image{
+    flex: 1 1 100%;
     background-image: url(./images/Saas\ illustration-img2.svg);
-    height:60vh;
+    height:100vh;
     width:30vw;
     background-size: cover;
+}
+.right_side_text{
+    margin: 0 auto;
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .heading_right_side{
     font-size: 36px;
@@ -98,7 +113,10 @@ body{
     text-align: center;
     letter-spacing: 1px;
 }
-
+.cards{
+    display: flex;
+    flex-direction: row;
+}
 .card{
     height: 100%;
     width: 230px;
@@ -129,4 +147,80 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width:500px){
+    .navbar_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        height: 100px;
+    }
+    .menu_list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 15px;
+    }
+    .list_item{
+        flex: 1 1 25%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .left_container .main_heading{
+        font-size: 35px;
+    }
+    .right_container_img{
+        order: -1;
+        width: 60vh;
+    }
+    .main_part{
+        min-height: 140vh;
+        flex-direction: column;
+    }
+    .left_side_image{
+    width: 35vh;
+    }
+    .heading3{
+    margin-top: -200px;
+    }
+    .cards{
+        flex-direction: column;
+        gap: 50px;
+    }
+  
+}
+
+@media all and (max-width:850px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left_container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .right_container_img{
+        order: -1;
+        width: 60vh;
+    }
+    .left_side_image{
+    height: 60vh;
+    }
+    .cards{
+        margin-bottom: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 35px;
+        /* flex: 1 1 100%; */
+    }
+  
 }
